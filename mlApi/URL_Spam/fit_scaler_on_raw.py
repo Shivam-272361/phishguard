@@ -1,13 +1,4 @@
-"""
-Fit StandardScaler on Raw Preprocessed Features
-=================================================
-Re-runs the preprocessing pipeline up to (but not including) scaling,
-then fits a StandardScaler on the raw features and saves it.
-This allows the API to properly scale newly extracted features.
 
-Usage:
-    python fit_scaler_on_raw.py
-"""
 
 import os
 import sys

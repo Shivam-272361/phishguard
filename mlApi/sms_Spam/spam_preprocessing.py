@@ -1,11 +1,4 @@
-"""
-SMS Spam Detection - Data Cleaning & NLP Preprocessing Pipeline
-===============================================================
-A production-ready script for preprocessing SMS spam data for NLP model training.
 
-Author: Data Science Pipeline
-Requirements: pandas, numpy, nltk, scikit-learn, matplotlib, seaborn
-"""
 
 import os
 import sys

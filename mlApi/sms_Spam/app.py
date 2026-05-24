@@ -1,22 +1,4 @@
-"""
-SMS Spam Detection - Production-Ready Flask API
-================================================
-A RESTful API for real-time spam detection using the trained
-Multinomial Naive Bayes model and TF-IDF vectorizer.
 
-Endpoints:
-    POST /predict        - Predict single SMS message
-    POST /predict/batch  - Predict multiple SMS messages
-    GET  /health         - Health check
-    GET  /               - API info
-
-Usage:
-    Development: python app.py
-    Production:  waitress-serve --port=5000 app:app
-
-Dependencies:
-    pip install flask waitress numpy scipy
-"""
 
 import os
 import sys

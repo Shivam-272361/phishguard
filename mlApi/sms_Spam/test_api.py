@@ -1,18 +1,4 @@
-"""
-SMS Spam Detection API - Test Client
-=====================================
-Tests the Flask API endpoints with sample requests.
 
-Usage:
-    # First start the server in another terminal:
-    #   python run_server.py
-    #
-    # Then run this test script:
-    #   python test_api.py
-
-Dependencies:
-    pip install requests
-"""
 
 import json
 import sys

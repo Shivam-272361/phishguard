@@ -1,12 +1,4 @@
-"""
-SMS Spam Detection - Naive Bayes Model Training & Evaluation
-=============================================================
-A production-ready script to train and evaluate a Multinomial Naive Bayes
-classifier on the preprocessed TF-IDF spam dataset.
 
-Author: Data Science Pipeline
-Requirements: scikit-learn, scipy, numpy, matplotlib, seaborn
-"""
 
 import os
 import sys

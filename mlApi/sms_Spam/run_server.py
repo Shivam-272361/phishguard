@@ -1,16 +1,4 @@
-"""
-SMS Spam Detection API - Production Server Runner
-==================================================
-Runs the Flask API using Waitress (a production WSGI server).
-Waitress is cross-platform and works reliably on Windows.
 
-Usage:
-    python run_server.py
-    python run_server.py --host 0.0.0.0 --port 8080
-
-Install dependency:
-    pip install waitress
-"""
 
 import argparse
 import sys

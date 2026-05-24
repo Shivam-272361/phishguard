@@ -1,23 +1,4 @@
-"""
-Phishing URL Detection - Production Flask REST API
-===================================================
-A production-ready REST API serving the trained Random Forest
-model for real-time phishing URL detection.
 
-Endpoints:
-    GET  /health              -> Service health status
-    GET  /info                -> Model and feature metadata
-    POST /predict             -> Single prediction (pre-scaled features)
-    POST /predict_batch       -> Batch prediction (pre-scaled features)
-    POST /predict_url         -> Predict from raw URL string
-
-Usage:
-    python app.py             -> Runs on http://0.0.0.0:5000
-    python app.py --port 8080 -> Runs on custom port
-
-Author: AI Assistant
-Date: 2026-05-09
-"""
 
 import os
 import sys

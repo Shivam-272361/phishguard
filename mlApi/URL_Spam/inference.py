@@ -1,17 +1,4 @@
-"""
-Phishing URL Detection - Model Inference / Prediction
-=======================================================
-A production-ready inference script for testing the trained
-Random Forest model with new preprocessed inputs.
 
-Usage:
-    python inference.py                          -> Demo mode using X_test
-    python inference.py --input custom.csv       -> Batch prediction on custom CSV
-    python inference.py --input custom.csv --output results.csv
-
-Author: AI Assistant
-Date: 2026-05-09
-"""
 
 import os
 import sys

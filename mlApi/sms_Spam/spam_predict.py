@@ -1,11 +1,3 @@
-"""
-SMS Spam Detection - Inference Script
-======================================
-Predict whether new SMS messages are spam or ham using the
-trained Naive Bayes model and TF-IDF vectorizer.
-
-Author: Data Science Pipeline
-"""
 
 import os
 import sys

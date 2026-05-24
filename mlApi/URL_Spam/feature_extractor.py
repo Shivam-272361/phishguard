@@ -1,13 +1,4 @@
-"""
-URL Feature Extractor for Phishing Detection API
-=================================================
-Extracts URL-based, domain-based, and optional web-content features
-from a raw URL string. Designed to minimize median-imputation and
-improve prediction accuracy for the /predict_url endpoint.
 
-Author: AI Assistant
-Date: 2026-05-09
-"""
 
 import os
 import re
