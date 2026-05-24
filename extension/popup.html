@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 320px; padding: 15px; font-family: system-ui, sans-serif; margin: 0; }
+    .header { margin-bottom: 12px; }
+    .logo { font-weight: bold; color: #1e293b; font-size: 1.1rem; }
+    .status { padding: 10px; border-radius: 6px; margin-bottom: 12px; text-align: center; font-size: 13px; }
+    .status.ok { background: #d1fae5; color: #065f46; }
+    .status.warn { background: #fef3c7; color: #92400e; }
+    .status.err { background: #fee2e2; color: #991b1b; }
+    label { font-size: 11px; color: #64748b; display: block; margin-bottom: 4px; }
+    input { width: 100%; padding: 8px; margin-bottom: 10px; box-sizing: border-box; border: 1px solid #cbd5e1; border-radius: 6px; }
+    button { width: 100%; padding: 10px; background: #4f46e5; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; margin-bottom: 8px; }
+    button.secondary { background: #64748b; }
+    button:hover { opacity: 0.9; }
+    .hint { font-size: 11px; color: #64748b; line-height: 1.4; margin-top: 8px; }
+    #check-result { font-size: 12px; margin-top: 8px; }
+    #auth-section, #logout-section { display: none; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <span class="logo">PhishGuard AI</span>
+  </div>
+
+  <div id="protection-status" class="status warn">Protection: checking...</div>
+
+  <label for="api-url">Backend URL (Express)</label>
+  <input type="text" id="api-url" placeholder="http://localhost:3000" />
+
+  <button id="save-api-btn">Save API URL</button>
+  <button id="check-btn" class="secondary">Check extension &amp; backend</button>
+  <div id="check-result"></div>
+
+  <div id="auth-section">
+    <label>Email</label>
+    <input type="email" id="email" placeholder="optional login">
+    <input type="password" id="password" placeholder="Password">
+    <button id="login-btn">Login</button>
+  </div>
+
+  <div id="subscription-info" style="font-size:12px;"></div>
+  <div id="logout-section">
+    <button id="logout-btn" class="secondary">Logout</button>
+  </div>
+
+  <p class="hint">
+    Load this folder in Chrome: <strong>phisguard/extension</strong><br>
+    Start backend: <code>npm run dev</code> in <strong>backend/</strong>
+  </p>
+
+  <script src="popup.js"></script>
+</body>
+</html>

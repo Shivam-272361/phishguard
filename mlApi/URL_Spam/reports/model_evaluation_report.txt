@@ -1,0 +1,71 @@
+============================================================
+PHISHING URL DETECTION - MODEL EVALUATION REPORT
+============================================================
+Generated on: 2026-05-09 12:21:04
+
+--- Model Configuration ---
+Algorithm              : Random Forest Classifier
+N Estimators           : 200
+Max Depth              : None
+Min Samples Split      : 5
+Min Samples Leaf       : 2
+Class Weight           : balanced
+Random State           : 42
+
+--- Dataset Split ---
+Training samples       : 188,636
+Testing samples        : 47,159
+Feature count          : 59
+
+--- Cross-Validation (Stratified 5-Fold) ---
+CV ROC-AUC Scores      : [1.0, 1.0, 1.0, 1.0, 1.0]
+CV Mean ROC-AUC        : 1.0000 (+/- 0.0000)
+OOB Score              : 1.0000
+
+--- Test Set Performance ---
+Accuracy               : 1.0000
+Precision              : 1.0000
+Recall (Sensitivity)   : 1.0000
+F1-Score               : 1.0000
+ROC-AUC                : 1.0000
+Average Precision      : 1.0000
+
+--- Confusion Matrix ---
+True Negatives (TN)    : 20,188
+False Positives (FP)   : 1
+False Negatives (FN)   : 0
+True Positives (TP)    : 26,970
+
+--- Classification Report ---
+              precision    recall  f1-score   support
+
+  Legitimate       1.00      1.00      1.00     20189
+    Phishing       1.00      1.00      1.00     26970
+
+    accuracy                           1.00     47159
+   macro avg       1.00      1.00      1.00     47159
+weighted avg       1.00      1.00      1.00     47159
+
+
+--- Top 10 Important Features ---
+  URLSimilarityIndex                  : 0.1986
+  LineOfCode                          : 0.1229
+  NoOfExternalRef                     : 0.1038
+  NoOfImage                           : 0.0866
+  NoOfSelfRef                         : 0.0799
+  NoOfCSS                             : 0.0623
+  NoOfJS                              : 0.0584
+  HasSocialNet                        : 0.0466
+  HasDescription                      : 0.0310
+  HasWWW                              : 0.0301
+
+--- Output Files ---
+  Model                : models/random_forest_phishing_model.pkl
+  Confusion Matrix     : plots/confusion_matrix.png
+  ROC Curve            : plots/roc_curve.png
+  Precision-Recall     : plots/precision_recall_curve.png
+  Feature Importance   : plots/model_feature_importance.png
+
+============================================================
+END OF REPORT
+============================================================

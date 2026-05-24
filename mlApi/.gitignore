@@ -1,0 +1,5 @@
+# datasets
+*.csv
+
+# keep sample datasets only if needed
+!sample.csv

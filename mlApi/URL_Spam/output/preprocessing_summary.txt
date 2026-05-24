@@ -1,0 +1,51 @@
+============================================================
+PHISHING URL DATASET - PREPROCESSING SUMMARY REPORT
+============================================================
+Generated on: 2026-05-09 11:09:03
+
+--- Dataset Overview ---
+Original shape           : 235795 rows x 56 columns
+Cleaned shape            : 235795 rows x 60 columns
+Removed duplicates       : 0
+Missing values handled   : 0 rows removed
+Final feature count (X)  : 59
+
+--- Train / Test Split ---
+Test size ratio          : 0.2
+Random state             : 42
+X_train shape            : (188636, 59)
+X_test  shape            : (47159, 59)
+y_train distribution     : {0: np.int64(80756), 1: np.int64(107880)}
+y_test  distribution     : {0: np.int64(20189), 1: np.int64(26970)}
+
+--- Feature Engineering ---
+Engineered features added (if URL column present):
+  - NoOfDotsInURL
+  - NoOfSpecialCharsInURL
+  - HasAtSymbol
+  - HasDoubleSlash
+  - HasWWW
+  - HasSuspiciousTLD
+  - NoOfDotsInDomain
+  - HasHyphenInDomain
+
+--- Scaling ---
+Scaler used              : StandardScaler
+Numerical columns scaled : 59
+
+--- Output Files ---
+  - output/cleaned_dataset.csv
+  - output/X_train.csv
+  - output/X_test.csv
+  - output/y_train.csv
+  - output/y_test.csv
+
+--- Plots Generated ---
+  - plots/class_distribution.png
+  - plots/correlation_heatmap.png
+  - plots/feature_importance.png
+  - plots/feature_histograms.png
+
+============================================================
+END OF REPORT
+============================================================
