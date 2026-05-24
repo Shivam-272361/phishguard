@@ -1,6 +1,6 @@
 console.log("PhishGuard: Service worker starting");
 
-const DEFAULT_API_BASE = "http://localhost:3000";
+const DEFAULT_API_BASE = "https://phishguard-nodejs.onrender.com";
 const HEALTH_TIMEOUT_MS = 4000;
 const SCAN_TIMEOUT_MS = 45000;
 const POLL_INTERVAL_MS = 1000;
