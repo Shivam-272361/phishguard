@@ -114,9 +114,10 @@ def predict():
 # RUN SERVER
 # ============================================================
 
-if __name__ == '__main__':
+@app.route("/")
+def home():
+    return "PhishGuard API Running"
 
-    app.run(
-        debug=os.getenv("DEBUG") == "True",
-        port=int(os.getenv("PORT"))
-    )
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port, debug=False)
