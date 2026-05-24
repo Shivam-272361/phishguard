@@ -1,12 +1,4 @@
-"""
-Phishing URL Detection - Random Forest Model Training
-=======================================================
-A production-ready, modular training pipeline for the AI-powered
-phishing URL detection system using Random Forest.
 
-Author: AI Assistant
-Date: 2026-05-09
-"""
 
 import os
 import sys

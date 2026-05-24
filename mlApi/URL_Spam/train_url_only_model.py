@@ -1,13 +1,4 @@
-"""
-Train URL-Only Random Forest Model
-=====================================
-Trains a dedicated Random Forest using ONLY features that can be
-reliably extracted from a raw URL string (no HTML scraping needed).
-This eliminates median-imputation errors in /predict_url.
 
-Usage:
-    python train_url_only_model.py
-"""
 
 import os
 import sys

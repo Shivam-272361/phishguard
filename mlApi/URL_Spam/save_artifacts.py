@@ -1,13 +1,4 @@
-"""
-Save Preprocessing Artifacts for Production API
-================================================
-Retroactively generates and saves the scaler, label encoder,
-feature metadata, and training-set medians from the already
-preprocessed cleaned_dataset.csv.
 
-Usage:
-    python save_artifacts.py
-"""
 
 import os
 import json
